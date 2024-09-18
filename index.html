@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="biblioteca">
+        <h1>Biblioteca Digital</h1>
+
+        <div class="controles">
+            <input type="text" id="titulo" placeholder="Título del libro">
+            <input type="text" id="autor" placeholder="Autor del libro">
+            <button onclick="agregarLibro()">Agregar Libro</button>
+        </div>
+
+        <div class="controles">
+            <input type="text" id="buscar" placeholder="Buscar por título o autor">
+            <button onclick="buscarLibros()">Buscar</button>
+        </div>
+
+        <div class="controles">
+            <input type="text" id="prestamo" placeholder="Título para prestar">
+            <button onclick="prestarLibro()">Prestar Libro</button>
+        </div>
+
+        <div class="controles">
+            <input type="text" id="devolucion" placeholder="Título para devolver">
+            <button onclick="devolverLibro()">Devolver Libro</button>
+        </div>
+
+        <h2>Resultados de la Búsqueda</h2>
+        <ul id="resultados"></ul>
+
+        <p id="mensaje"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
